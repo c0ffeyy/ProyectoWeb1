@@ -1,0 +1,83 @@
+/*==========================================================*/
+                /* PROPIEDADES GLOBALES */
+/*==========================================================*/
+
+/* Fuente Instalada de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset CSS de Eric Meyer */
+* {
+    margin: 0;
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Especificación de la Familia de Fuentes - Color de Fondo */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffefe3;
+}
+
+/*==========================================================*/
+                        /* CABECERA */
+/*==========================================================*/
+
+/* Barra de Navegación General */
+nav {
+    background-color: #754b3a;
+}
+
+#navbar a span {
+    font-size: 23px;
+}
+
+#navbar .nav-item {
+    font-size: 18px;
+    padding: 8px 0px;
+}
+
+#menu .nav-item a {
+    border-radius: 7px;
+    padding: 8px 8px;
+    display: inline;
+}
+
+#menu .nav-item .no-activo {
+    color: #ded3cf;
+}
+
+#menu .nav-item a:hover {
+    background-color: white;
+    color: black !important;
+}
+
+#menu .dropdown-menu {
+    background-color: #ffefe3;
+    padding: 8px 8px;
+}
+
+#menu .dropdown-menu .dropdown-item {
+    font-size: 15px;
+    display: block;
+}
+
+#menu .dropdown-menu .dropdown-item:hover {
+    background-color: #eb9a7c !important;
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px #a15e43;
+}
+
+/*==========================================================*/
+                    /* MEDIA QUERIES */
+/*==========================================================*/
+
+/* Pantallas Pequeñas */
+@media (max-width: 767px) {
+    .dropdown-menu {
+        margin-top: 10px !important;
+    }
+}

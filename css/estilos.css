@@ -3,7 +3,7 @@
 /*==========================================================*/
 
 /* Fuente Instalada de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 /* Reset CSS de Eric Meyer */
 * {
@@ -26,7 +26,7 @@ body {
 /*==========================================================*/
 
 /* Barra de Navegación General */
-nav {
+#navbar {
     background-color: #754b3a;
 }
 
@@ -39,14 +39,17 @@ nav {
     padding: 8px 0px;
 }
 
+/* Menú de Navegación Principal */
+
+/* Elementos Colapsables */
 #menu .nav-item a {
-    border-radius: 7px;
-    padding: 8px 8px;
     display: inline;
+    padding: 8px 8px;
+    border-radius: 7px;
 }
 
 #menu .nav-item .no-activo {
-    color: #ded3cf;
+    /* color: #ded3cf; */
 }
 
 #menu .nav-item a:hover {
@@ -54,30 +57,50 @@ nav {
     color: black !important;
 }
 
+/* Elemento Colapsable y Desplegable */
 #menu .dropdown-menu {
     background-color: #ffefe3;
     padding: 8px 8px;
 }
 
 #menu .dropdown-menu .dropdown-item {
-    font-size: 15px;
     display: block;
+    font-size: 16px;
 }
 
 #menu .dropdown-menu .dropdown-item:hover {
     background-color: #eb9a7c !important;
     color: white !important;
-    font-weight: bold;
-    text-shadow: 0px 2px 5px #a15e43;
+    font-weight: bold !important;
+    text-shadow: 0px 1.5px 2px #ad715c;
 }
 
 /*==========================================================*/
                     /* MEDIA QUERIES */
 /*==========================================================*/
 
-/* Pantallas Pequeñas */
+/* Pantallas Extra-Pequeñas ( <576px ) */
+
+/* Especificaciones del Colapsado de Información de Contacto ( ≤461px ) */
+@media (max-width: 461px) {
+    #info-contacto .telefono {
+        padding-bottom: 4px !important;
+    }
+
+    #info-contacto .correo {
+        padding-top: 4px !important;
+    }
+}
+
+/* Pantallas Pequeñas ( ≥576px ) */
 @media (max-width: 767px) {
+
+    /* Especificaciones del Colapsado del Elemento Desplegable */
     .dropdown-menu {
         margin-top: 10px !important;
+    }
+
+    .dropdown-menu .dropdown-item {
+        text-align: start !important;
     }
 }

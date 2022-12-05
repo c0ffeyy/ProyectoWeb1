@@ -23,16 +23,20 @@
     <!--==========================================================-->
     <header>
       <!-- Información de Contacto -->
-      <span class="container-fluid d-flex justify-content-center" id="contacto">
+      <div class="container-fluid d-flex flex-wrap justify-content-center fw-semibold" id="info-contacto">
 
         <!-- Número de Teléfono -->
-        <i class="bi bi-telephone-fill pt-2"></i>
-        <p class="mb-0 p-2 pe-3 fs-6">+58 414-4866270</p>
+        <div class="p-2 telefono">
+          <i class="bi bi-telephone-fill pe-1"></i>
+          <p class="d-inline-flex mb-0">+58 414-4866270</p>
+        </div>
 
         <!-- Correo Electrónico -->
-        <i class="bi bi-envelope-fill pt-2"></i>
-        <p class="mb-0 p-2 fs-6">info@coffeyindustries.com</p>
-      </span>
+        <div class="p-2 correo">
+          <i class="bi bi-envelope-fill pe-1"></i>
+          <p class="d-inline-flex mb-0">info@coffeyindustries.com</p>
+        </div>
+      </div>
 
       <!-- Barra de Navegación General -->
       <nav class="navbar navbar-expand-md navbar-dark p-3" id="navbar">
@@ -75,23 +79,17 @@
                 <a class="nav-link no-activo fw-bold" href="#">Software</a>
               </li>
 
+              <!-- Elemento Colapsable y Desplegable -->
               <li class="nav-item dropdown fw-bold" id="nav-item">
-                <a
-                  class="nav-link dropdown-toggle no-activo"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  Mantenimiento
-                </a>
+                <a class="nav-link dropdown-toggle no-activo" role="button" data-bs-toggle="dropdown">Mantenimiento</a>
                 <ul class="dropdown-menu">
 
                   <li>
-                    <a class="dropdown-item" href="#">Preventivo</a>
+                    <a class="dropdown-item fw-semibold text-center" href="#">Preventivo</a>
                   </li>
 
                   <li>
-                    <a class="dropdown-item" href="#">Correctivo</a>
+                    <a class="dropdown-item fw-semibold text-center" href="#">Correctivo</a>
                   </li>
                   
                 </ul>
